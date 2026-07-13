@@ -1,3 +1,8 @@
+from add_task import add_task
+from view_tasks import view_tasks
+from delete_task import delete_task
+
+
 def todolist():
     task_list = []
     while True:
@@ -10,26 +15,11 @@ def todolist():
 
         match user_input:
             case "1":
-                task_name = input("Enter the task name:")
-                task_description = input("Enter the task description:")
-                task_due_date = input("Enter the task due date:")
-                task_priority = input("Enter the task priority:")
-                task_status = input("Enter the task status:")
-                task_list.append(
-                    {
-                        "task_name": task_name,
-                        "task_description": task_description,
-                        "task_due_date": task_due_date,
-                        "task_priority": task_priority,
-                        "task_status": task_status,
-                    }
-                )
-
+                add_task(task_list)
             case "2":
-                print(task_list)
+                view_tasks(task_list)
             case "3":
-                task_name = input("Enter the task name to delete:")
-                task_list.remove(task_name)
+                delete_task(task_name, task_list)
             case "4":
                 break
 
