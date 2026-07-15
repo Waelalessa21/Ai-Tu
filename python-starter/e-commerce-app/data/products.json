@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "name": "Mug",
+    "price": 12.99,
+    "stock": 50
+  },
+  {
+    "id": "99e4c3bd",
+    "name": "x",
+    "price": 0.01,
+    "stock": 0
+  }
+]
